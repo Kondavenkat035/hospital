@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointments</title>
+    <style>
+        body {
+            font-family: 'Segoe UI';
+            background: #f4f7fb;
+            margin: 0;
+        }
+
+        .card {
+            width: 400px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h2, h3 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #4facfe;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #00c6ff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #eef3f7;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+
+<h2>📅 Book Appointment</h2>
+
+<input id="name" placeholder="Enter Name">
+<input id="doctor" placeholder="Doctor Name">
+<input type="date" id="date">
+
+<button onclick="bookAppointment()">Submit</button>
+
+<hr>
+
+<h3>📋 All Appointments</h3>
+<button onclick="loadAppointments()">Load</button>
+
+<ul id="list"></ul>
+
+<a href="index.html">⬅ Back</a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
